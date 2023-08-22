@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Integration #2</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="box">
+                <div class="albumArt">
+                    <img src="ClipartKey_597535.png" class="album-vinyl" />
+                    <img
+                        src="https://heyjoemusic.co.uk/cdn/shop/products/TaylorSwiftRed.jpg?v=1665141850"
+                        class="album-image"
+                    />
+                </div>
+                <div class="songInfo">
+                    <p id="songName">All Too Well (Taylor's Version)</p>
+                    <p id="songArtist">Taylor Swift</p>
+                </div>
+                <div class="songTime-container">
+                    <div id="songTime">
+                        <p class="timeNumber">5:00</p>
+                        <p class="timeNumber">10:13</p>
+                    </div>
+                    <div id="timeSeeker">
+                        <input type="range" id="slider" />
+                    </div>
+                    <div class="btn-mainContainer">
+                        <div id="btn-container">
+                            <button class="btn">
+                                <i
+                                    class="fa-solid fa-backward-step controll-btn"
+                                ></i>
+                            </button>
+                            <button class="btn-2 btn" id="playPause-btn">
+                                <i
+                                    class="fa-solid fa-play"
+                                    style="color: #ffffff"
+                                    id="playPauseIcon"
+                                ></i>
+                            </button>
+                            <button class="btn">
+                                <i
+                                    class="fa-solid fa-forward-step controll-btn"
+                                ></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- lyrics -->
+            <div id="lyricsContainer">
+                <h2>Explore</h4>
+                <div id="choices">
+                    <button class="integration-btn lyrics-btn" id="lyrics-btn">
+                        <p class="btn-txt">Lyrics</p>
+                    </button>
+                    <button class="integration-btn" id="albums-btn">
+                        <p class="btn-txt">Other Albums</p>
+                    </button>
+                    <button class="integration-btn" id="related-artists-btn">
+                        <p class="btn-txt">Related Artists</p>
+                    </button>
+                </div>
+                <div id="content-container">
+                    <pre id="lyrics-content"></pre>
+                    <pre id="albums-content"></pre>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
